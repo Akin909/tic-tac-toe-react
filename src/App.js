@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Game from './components/game.js';
 import styled, { injectGlobal} from 'styled-components';
+import { Game, Title } from './components/game.js';
 
 injectGlobal`
   html {
@@ -34,6 +34,7 @@ class App extends Component {
   render() {
     return (
       <OuterContainer>
+        <Title>Tic-Tac-Toe</Title> 
         <Game/>
       </OuterContainer>
     );
